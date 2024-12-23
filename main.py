@@ -10,6 +10,13 @@ app = Flask(__name__)
 def home():
     return "Home"
 
+
+@app.route('/data', methods=['POST'])
+def process_data():
+    data = request.json
+    # Process the data
+    return jsonify({'message': 'Data processed successfully'})
+
 # Create HTTP which are other methods to connect on the internet. Among them are GET, POST, PUT & DELETE
 # GET is to request data from a specified resource
 # POST is to create  a resource
