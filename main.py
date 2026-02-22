@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")  # Default root location
 def home():
-    return "Home"
+    return "Hye Welcome to my API"
 
 
 @app.route('/data', methods=['POST'])
